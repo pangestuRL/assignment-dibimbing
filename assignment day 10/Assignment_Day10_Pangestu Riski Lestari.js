@@ -76,3 +76,5 @@ console.table(daftarRankingSiswa)
 
 console.log("=============== DAFTAR ABSENSI ===============")
 console.table(sekolahTadikaMesra.daftarAbsensiSiswa())
+
+//text
