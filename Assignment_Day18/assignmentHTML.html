@@ -1,0 +1,236 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- About Company-->
+        <section class="container-tentang">
+            <div>
+                <h1>Tentang Perusahaan Kami</h1>
+            </div>
+            <div class="container-tentang-content">
+                <div class="container-tentang-content-img">
+                    <img src="./assets/about_company_profile.jpg" alt="Company-Photo" width="500" height="330"/>
+                </div>
+                <div class="container-tentang-content-p">
+                    <p>
+                        Rhoncus eget ut lacus sed <b>euismod id cras enim eu</b>. Lobortis integer at mi eget. 
+                        Tellus a elementum malesuada mi placerat massa. Sagittis viverra habitasse nunc tortor urna diam diam sem eget. 
+                        Fusce lorem amet sed phasellus nunc et quam. Sed proin urna tincidunt massa. 
+                        Varius congue dolor ipsum adipiscing. <b>Fermentum urna nullam nibh senectus gravida leo morbi elementum arcu</b>.
+                    </p>
+                </div>
+            </div>
+            
+        </section>
+        <!-- Struktur Perusahaan -->
+        <section class="container-struktur-perusahaan">
+            <div>
+                <h2>A. Struktur Perusahaan</h2>
+            </div>
+            <div class="container-struktur-perusahaan-content">
+                <div class="container-struktur-perusahaan-content-ceo">
+                    <p><b>1. CEO : George Philip lore</b></p>
+                </div>
+                <div class="container-struktur-perusahaan-content-cto">
+                    <p><b>2. CTO : Vishal Singh</b></p>
+                    <p>
+                        a. Divisi Finance & Accounting <br>
+                        Manager : Jill Wright <br>
+                        Anggota tim : <br>
+                        Jacob Hayes <br>
+                        Louis Tomlinson <br>
+                        b. Divisi IT Technology <br>
+                        Manager : Aditya Ishaan Akhil <br>
+                        Anggota tim : <br>
+                        Josephine Larson <br>
+                        Ravindra Singh
+                    </p>
+                </div>
+            </div>
+            
+        </section>
+        <hr>
+        <!-- Form Registrasi Karyawan Baru -->
+        <section class="container-form">
+            <div>
+                <h2>B. Form Registrasi Karyawan Baru</h2>
+            </div>
+            <div class="container-form-content">
+                <div class="container-form-kanan">
+                    <span>Mohon untuk mengisi form dibawah ini untuk registrasi karyawan baru.</span>
+                <br/>
+                <br/>
+                <form action="#" method="POST" target="_blank">
+                    <!-- Input Nama Lengkap -->
+                    <div>
+                        <label for="nama-lengkap">Nama Lengkap:</label><br/>
+                        <input
+                            type="text"
+                            name="nama-lengkap"
+                            id="nama-lengkap"
+                            placeholder="Masukkan nama lengkap"
+                            />
+                    </div>
+                    <br/>
+                    <!-- Date of birth input -->
+                    <div>
+                        <label for="tanggal-lahir">Tanggal Lahir</label><br/>
+                        <input type="date" name="tanggal-lahir" id="tanggal-lahir">
+                    </div>
+                    <br/>
+                    <!-- Pilih Divisi -->
+                    <div>
+                        <span>Pilih divisi untuk karyawan baru</span><br />
+                        <div>
+                            <input
+                                type="radio"
+                                name="pilihan-divisi"
+                                id="divisi-finance&accounting"
+                                value="divisi-finance&accounting"
+                            />
+                            <label for="divisi-finance&accounting">Divisi Finance & Accounting</label>
+                        </div>
+                        <div>
+                            <input
+                                type="radio"
+                                name="pilihan-divisi"
+                                id="divisi-IT-Technology"
+                                value="divisi-IT-Technology"
+                            />
+                            <label for="divisi-IT-Technology">Divisi IT Technology</label>
+                        </div>
+                    </div>
+                    <br/>
+                </div>
+                <div class="container-form-kiri">
+                    <!-- pilih jadwal WFO -->
+                    <div>
+                        <span>Pilih jadwal hari untuk WFO dalam satu minggu, sesuai dengan divisi yang dipilih</span><br/>
+                        <div>
+                            <input
+                                type="checkbox"
+                                name="jadwal-WFO"
+                                id="senin"
+                                value="senin"
+                            />
+                            <label for="senin">Senin</label>
+                        </div>
+                        <div>
+                            <input
+                                type="checkbox"
+                                name="jadwal-WFO"
+                                id="selasa"
+                                value="selasa"
+                            />
+                            <label for="selasa">Selasa</label>
+                        </div>
+                        <div>
+                            <input
+                                type="checkbox"
+                                name="jadwal-WFO"
+                                id="rabu"
+                                value="rabu"
+                            />
+                            <label for="rabu">Rabu</label>
+                        </div>
+                        <div>
+                            <input
+                                type="checkbox"
+                                name="jadwal-WFO"
+                                id="kamis"
+                                value="kamis"
+                            />
+                            <label for="kamis">Kamis</label>
+                        </div>
+                        <div>
+                            <input
+                                type="checkbox"
+                                name="jadwal-WFO"
+                                id="jumat"
+                                value="jumat"
+                            />
+                            <label for="jumat">Jumat</label>
+                        </div>
+                    </div>
+                    <br/>
+                    <!-- ID Card Photo -->
+                    <div>
+                        <span>Lampirkan Foto ID Card Pegawai</span><br/>
+                        <input 
+                            type="file"
+                            name="id-card-photo"
+                            id="id-card-photo"
+                        />
+                    </div>
+                    <br/>
+                    <!-- Additional Message -->
+                    <div>
+                        <label for="additional-message"
+                            >Jika terdapat notes lainnya, mohon dapat ditulis dibawah</label
+                        ><br/>
+                        <textarea
+                            name="additional-message"
+                            id="additional-message"
+                            placeholder="Masukkan notes..."
+                            cols="45"
+                            rows="5"
+                        ></textarea>
+                    </div>
+                    <br/>
+                    <!-- Button Submit -->
+                    <button type="submit" id="submit-btn">Submit Form</button>
+                </form>
+                </div>
+            </div>
+            
+            
+        </section>
+        <hr>
+        <!-- Tabel Data Karyawan -->
+        <section class="container-table">
+            <h2>C. Tabel Data Karyawan</h2>
+            <div class="container-table-content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID Karyawan</th>
+                            <th>Nama Lengkap</th>
+                            <th>Divisi</th>
+                            <th>Jadwal WFO</th>
+                            <th>Alamat Email</th>
+                            <th>Foto Karyawan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>John Doe</td>
+                            <td>IT Technology</td>
+                            <td>Selasa, Rabu, Jumat</td>
+                            <td>johndoe@company.com</td>
+                            <td>
+                                <img src="./assets/profile_employee_1.jpg" alt="foto-1">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Christina Liauw</td>
+                            <td>Finance & Accounting</td>
+                            <td>Senin, Selasa, Kamis</td>
+                            <td>christinaliauw@company.com</td>
+                            <td>
+                                <img src="./assets/profile_employee_2.jpg" alt="foto-2">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
